@@ -1,0 +1,200 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #007bff; /* Blue */
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+table {
+  text-decoration: none;
+  text-align: centre;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+  font-size: larger;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+nav a :hover {
+  border-bottom: 5px solid black;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.company-name {
+  text-decoration: none;
+}
+
+.hero {
+  background-image: linear-gradient(to bottom, #007bff, #0066cc);
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem 0;
+}
+
+.product-grid article {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+
+.product-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.product-grid img:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: contrast(80%);
+}
+.product-grid button {
+  border-radius: 20px;
+  width: 80%;
+  padding: 20px;
+}
+.product-grid button :hover {
+  background-color: white;
+  color: blue;
+}
+.company-name {
+  font-size: x-large;
+}
+
+.call-to-action {
+  background-color: #0066cc;
+  padding: 2rem;
+  text-align: center;
+  color: white;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: black;
+  color: #0066cc;
+  font-weight: bold;
+}
+
+.company-profile {
+  margin-bottom: 2rem;
+}
+
+.contact-info {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+  background-color: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+input[type="number" i] {
+  padding-block: 10px;
+  padding-inline: 20px;
+  border-radius: 20px;
+  max-width: 70%;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+  color: black;
+  font-size: larger;
+  text-decoration: none;
+}
+
+.searchbar input[type="text"] {
+  float: right;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+  border-radius: 30px;
+}
+@media screen and (max-width: 600px) {
+  .searchbar a,
+  .searchbar input[type="text"] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .searchbar input[type="text"] {
+    border: 1px solid #ccc;
+  }
+}
+
+.bottom-nav a.active {
+  border-bottom: 5px solid white;
+  color: #0066cc;
+}
+
+.bottom-nav a:hover {
+  border-bottom: 5px solid white;
+  color: #0066cc;
+  text-decoration: bold;
+}
